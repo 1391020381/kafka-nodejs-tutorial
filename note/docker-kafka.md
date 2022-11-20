@@ -36,5 +36,7 @@
 
 
 
-* https://abhayahire.medium.com/microservices-with-nodejs-using-nestjs-apache-kafka-5f7ce3292b60
+* [Microservices with NodeJs Using NestJs and Apache Kafka](https://abhayahire.medium.com/microservices-with-nodejs-using-nestjs-apache-kafka-5f7ce3292b60)
 * https://github.com/abhay-321/nestjs-microservices/tree/feature/message-broker-kafka
+
+* http://localhost:3060/users/4
