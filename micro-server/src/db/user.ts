@@ -1,4 +1,4 @@
-import { User } from "src/model/User";
+import { User } from 'src/model/User';
 
 const users = [
   {
@@ -113,13 +113,13 @@ const users = [
   },
 ];
 
-const findUser = (id : number) : User => {
+const findUser = (id: number): User => {
   const user = users.find((user) => user.id === id);
-  if(!user) {
-    return {id : id, message : "No User found with given id"};
+  if (!user) {
+    return { id: id, message: 'No User found with given id' };
   }
-  return user; 
+  return user;
 };
 
 // New feature introduced to export functions to export functions
-export = { findUserByID : findUser};
+export = { findUserByID: findUser };

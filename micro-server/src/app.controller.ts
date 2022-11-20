@@ -8,7 +8,7 @@ export class AppController {
 
   @MessagePattern('user-topic') // topic name here
   getHello(@Payload() message) {
-    let id = message.value.userid;
+    const id = message.value.userid;
     // Plus operator here does string to number conversion on the fly
     return this.appService.findUserByUserId(+id);
   }

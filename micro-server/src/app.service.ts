@@ -4,8 +4,7 @@ import db = require('./db/user');
 
 @Injectable()
 export class AppService {
-  
-  findUserByUserId(id : number): User {
+  findUserByUserId(id: number): User {
     return db.findUserByID(id);
   }
 }

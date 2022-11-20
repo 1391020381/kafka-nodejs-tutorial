@@ -3,7 +3,6 @@ import { Client, ClientKafka, Transport } from '@nestjs/microservices';
 
 @Injectable()
 export class AppService {
-  
   @Client({
     transport: Transport.KAFKA,
     options: {
@@ -12,9 +11,9 @@ export class AppService {
         brokers: ['localhost:9092'],
       },
       consumer: {
-        groupId: 'user-consumer' // consumer same as in micro service
-      }
-    }
+        groupId: 'user-consumer', // consumer same as in micro service
+      },
+    },
   })
   client: ClientKafka;
 
@@ -27,7 +26,7 @@ export class AppService {
     await this.client.connect();
   }
 
-  getUserById(id : number) {
-    return this.client.send('user-topic', { userid : id }); ;
+  getUserById(id: number) {
+    return this.client.send('user-topic', { userid: id });
   }
 }
